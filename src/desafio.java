@@ -25,6 +25,27 @@ public class desafio {
 
             System.out.println(menu);
             opcao= leitura.nextInt();
+
+            if (opcao == 1 ) {
+
+                System.out.println("O saldo é : " + saldo);
+            }else if (opcao == 2) {
+                System.out.println("Qual o valor que será transferido? ");
+                double valor = leitura.nextDouble();
+                if(valor > saldo){
+                    System.out.println("Saldo insuficiente :( ");
+                }else {
+                    saldo =- valor;
+                    System.out.println("Saldo atual"+ saldo);
+                }
+            } else if (opcao == 3 ) {
+                System.out.println("Valor transferido: ");
+               double valor = leitura.nextDouble();
+                System.out.println("Saldo Atual:  " + saldo);
+                } else if (opcao != 4) {
+            }
+        }
+        }
         }
     }
-}
+
