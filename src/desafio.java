@@ -35,7 +35,7 @@ public class desafio {
                 if(valor > saldo){
                     System.out.println("Saldo insuficiente :( ");
                 }else {
-                    saldo =- valor;
+                    saldo -= valor;
                     System.out.println("Saldo atual"+ saldo);
                 }
             } else if (opcao == 3 ) {
@@ -43,9 +43,9 @@ public class desafio {
                double valor = leitura.nextDouble();
                 System.out.println("Saldo Atual:  " + saldo);
                 } else if (opcao != 4) {
+                System.out.println("Opção Invalida");
             }
         }
         }
         }
-    }
 
